@@ -33,6 +33,10 @@ The coordinates go into your photo's EXIF tag; they are never sent
 anywhere by the app. Off by default.</li>
 <li><strong>Internet</strong> — used solely by Google Play to process the optional
 one-time Pro upgrade. The app itself makes no network requests.</li>
+<li><strong>Foreground service (camera)</strong> — while an intervalometer or
+bracket sequence runs, Android requires a visible notification and a
+short-lived wake lock to keep the run alive screen-off. No data is
+collected or sent; everything ends when the sequence stops.</li>
 </ul>
 
 <h2>In-app purchase</h2>
